@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+} 
+
+::selection{
+    background: #111;
+    color: white;
+}
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding: 0 30px;
+  color: #1b1b1b;
+}
+.content div{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.container{
+    height: 90vh;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container h1{
+    font-size: 80px;
+}
+
+.about{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.about h1{
+    margin-bottom: 40px;
+}
+
+.about img{
+    border-radius: 50%;
+}
+
+.about p{
+    margin: 70px;
+    font-size: 20px;
+}
+
+.courses{
+    margin-top: 40px;
+    text-align: center;
+    background: rgb(218, 218, 218);
+    padding-bottom: 60px;
+}
+
+.card{
+    padding: 50px 70px 50px 70px;
+    background: white;
+    width: fit-content;
+    border-radius: 30px;
+    transition: 0.3s;
+    box-shadow: 10px 10px 131px -34px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 131px -34px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 131px -34px rgba(0,0,0,0.75);
+}
+
+
+.card h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.card button{
+    padding: 15px 60px 15px 60px;
+    background: rgb(33, 131, 216);
+    border: 2px solid rgb(33, 131, 216);
+    font-size: 25px;
+    color: white;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+.card button:hover{
+    background: none;
+    color: rgb(33, 131, 216);
+    cursor: pointer;
+}
+
+.card ul li{
+    font-size: 25px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+// .cards:hover .card:not(:hover) {
+//     -webkit-filter: blur(1px);
+//     -moz-filter: blur(1px);
+//     filter: blur(30px);
+// }
+
+.card ul{
+    list-style-type: none;
+}
+
+.card ul li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card ul li i{
+    margin-right: 10px;
+}
+.card i{
+    color: lime;
+}
+
+.title-reviews{
+    text-align: center;
+}
+
+.title-card p{
+    color: red;
+}
+
+.reviews{
+    padding-top: 40px;
+    background: rgb(171, 171, 171);
+    padding-bottom: 50px;
+}
+
+.review-cards{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.testimonial{
+    background: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 50px;
+    text-align: center;
+    margin: 40px 40px 0px 40px;
+    font-size: 20px;
+}
+
+.testimonial p{
+    font-style: italic;
+}
+
+.testimonial img{
+    width: 250px;
+}
+
+.testimonial h2{
+    margin-bottom: 20px;
+}
+
+.why-us h1{
+    text-align: center;
+}
+
+.why-us{
+    background: rgb(255, 255, 255);
+    margin-top: 40px;
+}
+
+.teacher img{
+    border-radius: 50%;
+    width: 200px;
+}
+
+.teachers{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.teachers .teacher{
+    margin-left: 30px;
+    text-align: center;
+}
+
+.teachers .teacher h3{
+  font-size: 30px;
+}
+
+.teachers .teacher img:hover{
+    border: 3px solid red;
+}
+
+.sa{
+    display: flex;
+    justify-content: center;
+}
+
+.award{
+    margin-bottom: 20px;
+    padding: 15px;
+    background: red;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 90vw;
+    text-align: center;
+}
+
+.award:hover{
+    transform: scale(1.06);
+    letter-spacing: 3px;
+}
+
+.contact{
+    margin-top: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: rgb(215, 215, 215);
+}
+
+.inputs{
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.inputs button{
+    padding: 15px 60px 15px 60px;
+    background: rgb(33, 131, 216);
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 23px;
+    margin-top: 30px;
+    transition: 0.1s ease;
+    cursor: pointer;
+}
+
+.inputs button:hover{
+    transform: scale(1.1);
+}
+
+.inputs textarea{
+    background: white;
+    font-size: 20px;
+    padding: 10px;
+    transition: 0.3s ease;
+    border: 2px solid black;
+    resize: vertical;
+    outline: none;
+}
+
+.inputs textarea:focus{
+    transform: scale(1.1);
+}
+
+.inputs input:focus{
+    transform: scale(1.1);
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+}
+
+.inputs input{
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border: 2px solid black;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    outline: none;
+}
+
+
+.contact .title{
+    text-align: center;
+}
+
+footer{
+    background: rgb(40, 40, 40);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    padding-top: 100px;
+}
+
+.column a{
+    color: rgb(96, 96, 96);
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.column .links{
+    margin-top: 20px;
+}
+
+.column a:hover{
+    color: white;
+}
+
+.get-started{
+    background: rgb(56, 145, 254);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding-left: 100px;
+    margin-top: 30px;
+    padding-right: 100px;
+    position: relative;
+    top: 100px;
+}
+
+.get-started button{
+    margin-left: 20px;
+    background: rgb(112, 197, 250);
+    border-radius: 40px;
+    padding: 15px 40px 15px 40px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    position: relative;
+    left: 40px;
+}
+
+.get-started button:hover{
+    background: rgb(79, 187, 255);
+}
+
+.get-started h1{
+    font-weight: 300;
+}
+
+.pa{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 920px) {
+    nav .menu-btn i{
+      display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+      content: "\f00d";
+    }
+    nav ul{
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      background: #111;
+      height: 100vh;
+      width: 100%;
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+      left: 0;
+    }
+    nav ul li{
+      width: 100%;
+      margin: 40px 0;
+    }
+    nav ul li a{
+      width: 100%;
+      margin-left: -100%;
+      display: block;
+      font-size: 20px;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    #click:checked ~ ul li a{
+      margin-left: 0px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+      background: none;
+      color: cyan;
+    }
+  
+    .container h1{
+        font-size: 24px;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .parent-div{
+        // flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card{
+        margin-top: 30px;
+    }
+
+    .teachers{
+      flex-direction: column;
+    }
+
+    .teachers .teacher{
+      margin-top: 20px;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    .column2,.column3,.column3{
+        margin-top: 20px;
+    }
+
+    .get-started{
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-direction: column;
+        // border-radius: 0px;
+    }
+
+    .get-started h1{
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .get-started button{
+        margin-top: 20px;
+        left: 0;
+    }
+  }
